@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1" >
+  <test name="Regression suite 1" >
+    <classes>
+        <class name="com.gapstars.dumiduh.DropDownTest"/>
+        <class name="com.gapstars.dumiduh.CheckBoxTest"/>
+        <class name="com.gapstars.dumiduh.InputTest"/>
+        <class name="com.gapstars.dumiduh.NotificationMessageTest"/>
+        <class name="com.gapstars.dumiduh.DynamicContentTest"/>
+    </classes>
+ </test>
+</suite>
