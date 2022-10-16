@@ -13,10 +13,17 @@ public class NotificationPageFunctions {
         notificationPage = new NotificationPage(driver);
     }
 
+    /***
+     * Clicks on the link that displays the notification.
+     */
     public void displayTheNotification() {
         notificationPage.clickClickHere();
     }
 
+    /***
+     * Reads the content of the notification.
+     * @return The notification content.
+     */
     public String readTheDisplayedNotification() {
         return notificationPage.readNotificationMessage();
     }

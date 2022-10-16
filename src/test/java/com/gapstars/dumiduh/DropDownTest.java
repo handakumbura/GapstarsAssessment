@@ -29,6 +29,8 @@ private static ChromeDriver driver;
         TestData testData = JSONUtil.readTestData("002");
 
         dropDownPageFunctions.selectValueFromDropDown(testData.getStringValue());
+
+        //Asserts to see if the dropdown selection has been set.
         Assert.assertTrue(dropDownPageFunctions.isTheGivenValueSelected(testData.getStringValue()), "The given value was not set as the dropdown selection.");
     }
 

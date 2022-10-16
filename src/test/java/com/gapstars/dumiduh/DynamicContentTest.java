@@ -30,6 +30,8 @@ public class DynamicContentTest {
     public static void dynamicContentTest() {
         DynamicContentPageFunctions dynamicContentPage = new DynamicContentPageFunctions(driver);
         TestData testData = JSONUtil.readTestData("003");
+
+        //Asserts to aspects of the dynamic content loaded on the page.
         Assert.assertTrue(dynamicContentPage.isTheDynamicContentAvailable(), "The dynamic content was not available");
         Assert.assertEquals(dynamicContentPage.numberOfRowsContentDisplayed(), testData.getIntValue(), "The number of rows displayed is not as expected.");
     }

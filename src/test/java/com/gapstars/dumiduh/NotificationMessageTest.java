@@ -32,6 +32,8 @@ public class NotificationMessageTest {
         TestData testData = JSONUtil.readTestData("005");
 
         notificationPageFunctions.displayTheNotification();
+
+        //Asserts two aspects of the dynamic notification.
         Assert.assertTrue(notificationPageFunctions.readTheDisplayedNotification().length() > testData.getIntValue(), "The expected notification was not found.");
         Assert.assertTrue(notificationPageFunctions.readTheDisplayedNotification().contains( testData.getStringValue()), "The expected notification was not found.");
     }

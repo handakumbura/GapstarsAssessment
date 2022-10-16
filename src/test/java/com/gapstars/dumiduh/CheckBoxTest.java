@@ -30,6 +30,8 @@ public class CheckBoxTest {
         TestData testData = JSONUtil.readTestData("001");
 
         checkBoxPageFunctions.checkCheckBoxValue(testData.getStringValue());
+
+        //Asserts to see if the checkbox has been checked.
         Assert.assertTrue(checkBoxPageFunctions.isTheGivenCheckBoxChecked(testData.getStringValue()), "The given checkbox was not checked.");
     }
 

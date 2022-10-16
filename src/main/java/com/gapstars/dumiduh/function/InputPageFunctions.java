@@ -13,6 +13,10 @@ public class InputPageFunctions {
         inputPage = new InputPage(driver);
     }
 
+    /***
+     * Sets the text inside the input element.
+     * @param value The value to be set inside the input element.
+     */
     public void setText(int value) {
         inputPage.setText(value);
     }

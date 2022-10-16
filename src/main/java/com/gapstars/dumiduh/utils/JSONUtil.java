@@ -13,6 +13,11 @@ import java.io.IOException;
 
 public class JSONUtil {
 
+    /***
+     *
+     * @param id The id of the test data object that needs to be returned.
+     * @return The test data object that matches the search criteria.
+     */
     public static TestData readTestData(String id) {
         JSONParser jsonParser = new JSONParser();
 

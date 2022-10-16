@@ -30,6 +30,7 @@ private static ChromeDriver driver;
         InputPageFunctions inputPageFunctions = new InputPageFunctions(driver);
         TestData testData = JSONUtil.readTestData("004");
 
+        //Sets a numerical value.
         inputPageFunctions.setText(testData.getIntValue());
     }
 
