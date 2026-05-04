@@ -1,6 +1,5 @@
 package com.gapstars.dumiduh.utils;
 
-;
 import com.gapstars.dumiduh.models.TestData;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -9,6 +8,7 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.File;
 import java.io.IOException;
 
 public class JSONUtil {
@@ -21,7 +21,7 @@ public class JSONUtil {
     public static TestData readTestData(String id) {
         JSONParser jsonParser = new JSONParser();
 
-        try (FileReader reader = new FileReader("src\\main\\java\\com\\gapstars\\dumiduh\\resources\\test_data.json")) {
+        try (FileReader reader = new FileReader("src/main/java/com/gapstars/dumiduh/resources/test_data.json")) {
             //Read JSON file
             Object obj = jsonParser.parse(reader);
             JSONArray testDataList = (JSONArray) obj;
